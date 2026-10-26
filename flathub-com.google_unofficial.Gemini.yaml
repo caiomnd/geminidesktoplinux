@@ -26,4 +26,4 @@ modules:
       - type: git
         url: https://github.com/caiomnd/geminidesktoplinux.git
         tag: v1.2.0
-        commit: 356f9795d9f9442e1b9eb138cefd48a76480ebec
+        commit: f007c53adc2dbd92a84baeb2494a4bc72e159765
