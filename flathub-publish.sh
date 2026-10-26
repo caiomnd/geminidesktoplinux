@@ -83,8 +83,13 @@ step_push_github() {
     git tag -f "${RELEASE_TAG}"
     COMMIT_HASH="$(git rev-parse HEAD)"
     echo "✔ Repositório Git pronto! Branch: main | Tag: ${RELEASE_TAG} | Commit: ${COMMIT_HASH}"
-    echo "-> Enviando para o GitHub (${GITHUB_REPO_URL})..."
-    git push -u origin main --tags --force
+    echo "-> Enviando para o GitHub..."
+    if ! git push -u origin main --tags --force; then
+        echo ""
+        echo "⚠ Falha de autenticação no GitHub (o GitHub exige Chave SSH ou Personal Access Token)."
+        echo "-> Iniciando assistente automático de autenticação (./github-auth.sh)..."
+        ./github-auth.sh
+    fi
     echo "✔ Projeto publicado com sucesso em https://github.com/caiomnd/geminidesktoplinux !"
 }
 
