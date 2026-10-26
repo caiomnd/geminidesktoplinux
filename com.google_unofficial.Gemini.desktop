@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Gemini
+GenericName=AI Assistant
+GenericName[pt_BR]=Assistente de IA
+Comment=Unofficial Google Gemini desktop client for GNOME
+Comment[pt_BR]=Cliente desktop não oficial do Google Gemini para o GNOME
+Exec=gemini-desktop
+Icon=com.google_unofficial.Gemini
+Terminal=false
+Type=Application
+Categories=Network;Chat;ArtificialIntelligence;
+Keywords=AI;Gemini;Assistant;Chat;Google;LLM;IA;
+StartupNotify=true
+StartupWMClass=com.google_unofficial.Gemini
+X-GNOME-UsesNotifications=true

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.google_unofficial.Gemini</id>
+  <name>Gemini</name>
+  <summary>Google Gemini desktop app for GNOME</summary>
+  <summary xml:lang="pt_BR">Aplicativo desktop do Google Gemini para o GNOME</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <developer id="io.github.caiomnd">
+    <name>Caio Mendonça</name>
+  </developer>
+
+  <description>
+    <p>
+      Gemini Desktop brings the official Google Gemini interface in a clean, frameless-style desktop window just like the Windows and macOS desktop apps, seamlessly integrated with GNOME Software and App Bazaar.
+    </p>
+    <p xml:lang="pt_BR">
+      O Gemini Desktop traz a interface oficial do Google Gemini em uma janela desktop limpa e contínua, idêntica aos aplicativos para Windows e macOS, com integração nativa para instalação via GNOME Software e App Bazaar.
+    </p>
+    <p>Features:</p>
+    <p xml:lang="pt_BR">Recursos:</p>
+    <ul>
+      <li>Clean desktop window appearance matching the official Windows and macOS Gemini experience without browser toolbars</li>
+      <li xml:lang="pt_BR">Visual de aplicativo desktop limpo igual ao Windows e macOS, sem barras ou botões de navegador</li>
+      <li>Direct Google Account sign-in redirection to the user's default web browser</li>
+      <li xml:lang="pt_BR">Redirecionamento direto do login da Conta Google para o navegador padrão do usuário</li>
+      <li>Automatic official Google Gemini icon updates and system-wide light/dark mode synchronization</li>
+      <li xml:lang="pt_BR">Atualização automática do ícone oficial do Google Gemini e sincronização com o modo claro/escuro do sistema</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">com.google_unofficial.Gemini.desktop</launchable>
+
+  <url type="homepage">https://github.com/caiomnd/geminidesktoplinux</url>
+  <url type="bugtracker">https://github.com/caiomnd/geminidesktoplinux/issues</url>
+  <url type="vcs-browser">https://github.com/caiomnd/geminidesktoplinux</url>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Main window of Gemini Desktop on GNOME</caption>
+      <caption xml:lang="pt_BR">Janela principal do Gemini Desktop no GNOME</caption>
+      <image type="source" width="1200" height="820">https://raw.githubusercontent.com/caiomnd/geminidesktoplinux/v1.2.0/screenshots/main-dark.png</image>
+    </screenshot>
+  </screenshots>
+
+  <branding>
+    <color type="primary" scheme_preference="light">#f8fafd</color>
+    <color type="primary" scheme_preference="dark">#131314</color>
+  </branding>
+
+  <requires>
+    <display_length compare="ge">360</display_length>
+    <internet>always</internet>
+  </requires>
+
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </recommends>
+
+  <content_rating type="oars-1.1" />
+
+  <releases>
+    <release version="1.2.0" date="2026-10-26">
+      <description>
+        <p>Clean Windows/macOS desktop app design with seamless titlebar, official Gemini interface, and automatic redirection of Google Account login to the default browser.</p>
+      </description>
+    </release>
+  </releases>
+</component>
